@@ -97,6 +97,32 @@ text = '8' / '2';
 console.log(`value: ${text}, type: ${typeof text}`);
 console.log(text.charAt(0));
 
+//primitive타입과 object의 차이점
+
+//number, string, boolean, null, undefined
+let number = 2;
+let number2 = number;
+console.log(number); //2
+console.log(number2); //2
+
+number2 = 3;
+console.log(number); //2
+console.log(number2); //3
+
+//object
+let obj = {
+    name: 'raon',
+    age: 5,
+};
+console.log(obj.name); //raon
+
+let obj2 = obj;
+console.log(obj2.name); //raon
+
+obj.name = 'james';
+console.log(obj.name); //james
+console.log(obj2.name); //james 
+
 
 
 
